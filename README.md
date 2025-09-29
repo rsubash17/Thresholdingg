@@ -55,7 +55,7 @@ thresh_img8=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
 ret,thresh_img6=cv2.threshold(image_gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 ```
 ### Display the results
-#### ORIGIONAL IMAGE
+#### ORIGINAL IMAGE
 ```py
 
 
