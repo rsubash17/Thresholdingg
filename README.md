@@ -33,9 +33,9 @@ import cv2
 ```
 ### Read the Image and convert to grayscale
 ```py
-image = cv2.imread("disney.jpg",1)
+image = cv2.imread("tiger.jpg",1)
 image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
-image_gray = cv2.imread("disney.jpg",0)
+image_gray = cv2.imread("tiger.jpg",0)
 ```
 ### Use Global thresholding to segment the image
 ```py
@@ -55,7 +55,7 @@ thresh_img8=cv2.adaptiveThreshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
 ret,thresh_img6=cv2.threshold(image_gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 ```
 ### Display the results
-#### ORIGINAL IMAGE
+#### ORIGIONAL IMAGE
 ```py
 
 
@@ -64,7 +64,8 @@ plt.title("Original Image")
 plt.imshow(image)
 
 ```
-![image](https://github.com/user-attachments/assets/4ca57497-b683-402a-ba77-6ce12229fd9b)
+<img width="533" height="380" alt="Screenshot 2025-10-07 153706" src="https://github.com/user-attachments/assets/72e62440-d27d-4eb9-ad93-a98cea019933" />
+
 #### GREY IMAGE
 ```py
 
@@ -75,7 +76,8 @@ plt.imshow(cv2.cvtColor(image_gray, cv2.COLOR_BGR2RGB))
 plt.axis("off")
 plt.show()
 ```
-![image](https://github.com/user-attachments/assets/a239361b-f53c-4286-b547-0e67304dae8a)
+<img width="482" height="381" alt="Screenshot 2025-10-07 153728" src="https://github.com/user-attachments/assets/3d238cd3-ccf9-4f75-bab7-1eb52a1e6a62" />
+
 #### Threshold Image (Binary)
 ```py
 
@@ -87,7 +89,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/64156743-73e6-4a2f-b4de-4622190eaa8f)
+<img width="472" height="387" alt="Screenshot 2025-10-07 153736" src="https://github.com/user-attachments/assets/48126f76-d347-4872-9fa5-eb07e2210157" />
+
 
 #### Threshold Image (Binary Inverse)
 ```py
@@ -100,7 +103,7 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/4a1bedfc-4707-4f33-9287-f7c76c20ca4a)
+
 
 #### Threshold Image (To Zero)
 ```py
@@ -113,7 +116,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/b362d107-25c7-4d65-825b-403a8b78a6d1)
+<img width="485" height="379" alt="Screenshot 2025-10-07 153756" src="https://github.com/user-attachments/assets/3430f725-1a42-4e90-8ea5-71f7119918c3" />
+
 #### Threshold Image (To Zero-Inverse)
 ```py
 
@@ -125,7 +129,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/463d5500-47f7-40e5-9804-c78bf21ac5ee)
+<img width="587" height="415" alt="Screenshot 2025-10-07 153804" src="https://github.com/user-attachments/assets/5f4e259b-5221-4a0b-adcd-4715c53a1b70" />
+
 #### Threshold Image (Truncate)
 ```py
 
@@ -136,7 +141,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/d4f6f2bb-ad18-4844-8fe2-118b900aaba1)
+<img width="545" height="374" alt="Screenshot 2025-10-07 153816" src="https://github.com/user-attachments/assets/18d0ac3a-96eb-45cc-90b0-213ba9937b41" />
+
 #### Otsu
 ```py
 plt.axis("off")
@@ -146,7 +152,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/e23acf54-ee25-49ac-a0d7-b3b3620a1b19)
+<img width="476" height="386" alt="Screenshot 2025-10-07 153826" src="https://github.com/user-attachments/assets/06c6d91e-b690-4521-8a97-1d02f8582981" />
+
 #### Adaptive Threshold (Mean)
 ```py
 
@@ -157,7 +164,8 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/8871a993-4e16-41b1-9722-7c743d8b60de)
+<img width="488" height="390" alt="Screenshot 2025-10-07 153837" src="https://github.com/user-attachments/assets/64182014-3502-41af-918d-d1b1ec01dc04" />
+
 #### Adaptive Threshold (Gaussian)
 ```py
 plt.axis("off")
@@ -167,10 +175,7 @@ plt.axis("off")
 plt.show()
 
 ```
-![image](https://github.com/user-attachments/assets/d92f4f07-d45a-4745-9927-dcdcc13ab8d2)
-
-
-
+<img width="486" height="382" alt="Screenshot 2025-10-07 153846" src="https://github.com/user-attachments/assets/55d82b02-1d5f-4c14-ba07-360114ec2e04" />
 
 
 ## Result
